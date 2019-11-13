@@ -1,0 +1,15 @@
+<div class="overall status top_left">TOTAL SHIELDS {{overall_shield_percentage}}%</div>
+
+<div class="shield status top">FORWARD {{shields[forward]}}</div>
+<button type="button" (click)="hit(forward, 10)">forward hit test</button>
+
+<div class="shield status left">PORT {{shields[port]}}</div>
+<button type="button" (click)="hit(port, 10)">port hit test</button>
+
+<div class="hull status center">HULL INTEGRITY {{hull_integrity}}</div>
+
+<div class="shield status right">STARBOARD {{shields[starboard]}}</div>
+<button type="button" (click)="hit(starboard, 10)">starboard hit test</button>
+
+<div class="shield status bottom">AFT {{shields[aft]}}</div>
+<button type="button" (click)="hit(aft, 10)">aft hit test</button>

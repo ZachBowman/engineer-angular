@@ -1,0 +1,77 @@
+.overall
+  {
+  background-color: rgb(0, 128, 255);
+	}
+
+.shield
+  {
+  background-color: rgb(0, 192, 192);
+	}
+
+.hull
+  {
+  background-color: rgb(193, 137, 255);
+  }
+
+.status
+  {
+  text: black;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Lucida Console", Monospace;
+  font-size: 10pt;
+  display: table-cell;
+  width: 120px;
+  height: 40px;
+  line-height: 100%;
+  font-weight: bold;
+	}
+
+.top_left
+  {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	}
+
+.top
+  {
+	position: absolute;
+	left: 40%;
+	right: 60%;
+	top: 50px;
+	}
+
+.left
+	{
+	position: absolute;
+	top: 45%;
+	bottom: 55%;
+	left: 50px;
+	}
+
+.center
+	{
+  position: absolute;
+  top: 45%;
+  bottom: 55%;
+  left: 40%;
+  right: 60%;
+	}
+
+.right
+	{
+	position: absolute;
+	top: 45%;
+	bottom: 55%;
+	right: 50px;
+	}
+
+.bottom
+	{
+	position: absolute;
+	left: 40%;
+	right: 60%;
+	bottom: 50px;
+	}
