@@ -26,14 +26,21 @@ export class DefenseComponent implements OnInit
 	    }
     }
 
-  ngOnInit()
-    {
-    }
+  ngOnInit() {}
 
 	public hit (side, damage)
 	  {
-	  this.shields[side] -= damage;
-		this.calculate_overall_shield_percentage();
+	  if (this.shields[side] == 0)
+	    {
+	    this.hull_integrity -= damage;
+	    if (this.hull_integrity < 0) this.hull_integrity = 0;
+	    }
+	  else
+	    {
+	    this.shields[side] -= damage;
+	    if (this.shields[side] < 0) this.shields[side] = 0;
+  		this.calculate_overall_shield_percentage();
+	    }
 	  }
 
 	private calculate_overall_shield_percentage()
